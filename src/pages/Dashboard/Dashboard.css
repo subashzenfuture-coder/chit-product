@@ -1,0 +1,225 @@
+.stack_list .stack_card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.stack_list .stack_card .icon {
+  width: 40px;
+  height: 40px;
+  background: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #121212;
+  margin-bottom: 15px;
+}
+.stack_list .stack_card .stack_badge {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  background-color: #d7ebf8;
+  color: var(--main-color);
+}
+
+.stack_list .stack_card .stack_title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #212529bf;
+}
+.stack_list .stack_card .stack_count {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--main-color);
+}
+.stack_list .stack_card small {
+  font-size: 11px;
+}
+.stack_list .stack_card .progress {
+  --bs-progress-bar-bg: var(--main-color) !important;
+  height: 4px !important;
+}
+.stack_list .stack_card .progress-bar {
+  font-size: 10px;
+}
+
+.progress_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* PROGRESS BAR */
+.progress {
+  flex: 1; /* 🔥 takes full space */
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--main-color);
+  transition: width 0.3s ease;
+}
+
+/* RIGHT TEXT */
+.progress_text {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--main-color);
+  min-width: 40px;
+  text-align: right;
+}
+
+.chart_card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* HEADER */
+.chart_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.chart_header h4 {
+  margin: 0;
+}
+
+/* FILTER BUTTONS */
+.filter_btns button {
+  border: none;
+  padding: 6px 12px;
+  margin-left: 6px;
+  border-radius: 6px;
+  background: #f3f4f6;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.filter_btns button.active {
+  background: var(--gradient-color);
+  color: #fff;
+}
+
+.auction_detail {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.auction_detail .auction_card {
+  background: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #f8f8f8;
+}
+.auction_detail .auction_card .card-title {
+  font-size: 15px;
+}
+.auction_detail .auction_card .date_text {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #444;
+}
+.auction_detail .auction_card .card-text {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 3px;
+}
+.auction_detail .auction_card .card-count {
+  color: var(--main-color);
+}
+.card-time {
+  color: #000;
+}
+
+.auction-btn {
+  background: transparent !important;
+  color: #000 !important;
+  padding: 10px 16px !important;
+  border-radius: 8px;
+  font-size: 13px !important;
+  border: 1px solid #ccc !important;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.auction-btn:hover {
+  background: #efefef !important;
+  color: #000 !important;
+}
+
+
+
+/* ===============================
+   CUSTOMER CELL
+================================= */
+.customer_cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* AVATAR */
+.name_badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ===============================
+   STATUS
+================================= */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* STATUS COLORS */
+.status.credited {
+  background: #ecfdf5;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+.status.pending {
+  background: #fefce8;
+  color: #ca8a04;
+  border: 1px solid #fde68a;
+}
+
+.status.failed {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
