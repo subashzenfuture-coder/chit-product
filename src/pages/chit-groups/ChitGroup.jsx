@@ -233,8 +233,6 @@ export const ChitGroup = () => {
                   <form className="">
                     <div className="row g-3">
                       {/* PLAN NAME */}
-              
-
 
                       <div className="col-md-4">
                         <p style={{ fontSize: "12px", textTransform: "uppercase", fontWeight: "500" }}>Customer Details</p>
@@ -263,7 +261,10 @@ export const ChitGroup = () => {
                       </div>
                       <div className="col-md-12">
                         <small className="text-muted">
-                          Selected Groups: <span className="text-success">{selectedPlans.length} / {data.length}</span>
+                          Selected Groups:{" "}
+                          <span className="text-success">
+                            {selectedPlans.length} / {data.length}
+                          </span>
                         </small>
                       </div>
                       <div className="col-md-4">
@@ -273,6 +274,51 @@ export const ChitGroup = () => {
                       <div className="col-md-4">
                         <label className="form-label">Nominee Phone Number</label>
                         <input type="text" className="form-control" name="title" placeholder="Nominee Phone Number" />
+                      </div>
+
+                      <div className="payment-form-detail mt-4">
+                        <div className="row gy-4">
+                          <div className="col-lg-12">
+                            <h4 className="subtitle pb-3">Booking Reference Information</h4>
+
+                            {/* RADIO BUTTONS */}
+                            <div className="form-check form-check-inline">
+                              <input className="form-check-input" type="radio" name="booking_reference" />
+                              <label className="form-check-label">Agent</label>
+                            </div>
+
+                            <div className="form-check form-check-inline">
+                              <input className="form-check-input" type="radio" name="booking_reference" />
+                              <label className="form-check-label">Staff</label>
+                            </div>
+
+                            <div className="form-check form-check-inline">
+                              <input className="form-check-input" type="radio" name="booking_reference" />
+                              <label className="form-check-label">Office Walk In</label>
+                            </div>
+
+                            {/* SEARCH INPUT */}
+                            <div className="mt-3">
+                              <div className="row gy-4">
+                                <div className="col-lg-12">
+                                  <label className="form-label">Search Agent / Staff</label>
+
+                                  <input type="text" className="form-control" placeholder="Search Agent or Staff" list="referenceList" />
+
+                                  {/* STATIC ERROR (optional UI only) */}
+                                  <div className="invalid-feedback d-block">Select agent or staff</div>
+
+                                  {/* STATIC DATALIST */}
+                                  <datalist id="referenceList">
+                                    <option value="Raj Kumar - 9876543210" />
+                                    <option value="Arun Kumar - 9123456780" />
+                                    <option value="Vijay Raj - 9012345678" />
+                                  </datalist>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
 
                       {/* BUTTON */}
